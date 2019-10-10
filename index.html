@@ -1,25 +1,42 @@
-
 <html>
-
-    <head>
-      <title>
-        Cool Particles
-      </title>
-      <meta property="og:title" content="Text Particles" />
-      <meta property="og:description" content="Some cool canvas pixel manipulation" />
-      <meta property="og:image" content="http://william.hoza.us/images/text-small.png" />
-      <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body style="margin:0px;">
-      <canvas id="canv" onmousemove="canv_mousemove(event);" onmouseout="mx=-1;my=-1;">
-        you need a canvas-enabled browser, such as Google Chrome
-      </canvas>
-      <canvas id="wordCanv" width="500px" height="500px" style="border:1px solid black;display:none;">
-      </canvas>
-      <textarea id="wordsTxt" style="position:absolute;left:-100;top:-100;" onblur="init();" onkeyup="init();" onclick="init();"></textarea>
-      <script src="coolParticles.js"></script>
-      <script src="mouseover.js"></script>
-    </body>
-    
-    </html>
-    
+  <head>
+    <title>
+      Cool Particles by Joaquin Camara
+    </title>
+    <meta property="og:title" content="Text Particles" />
+    <meta
+      property="og:description"
+      content="Some cool canvas pixel manipulation"
+    />
+    <meta
+      property="og:image"
+      content="http://william.hoza.us/images/text-small.png"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body style="margin:0px;">
+    <canvas
+      id="canv"
+      onmousemove="canv_mousemove(event);"
+      onmouseout="mx=-1;my=-1;"
+    >
+      you need a canvas-enabled browser, such as Google Chrome
+    </canvas>
+    <canvas
+      id="wordCanv"
+      width="500px"
+      height="500px"
+      style="border:1px solid black;display:none;"
+    >
+    </canvas>
+    <textarea
+      id="wordsTxt"
+      style="position:absolute;left:-100;top:-100;"
+      onblur="init();"
+      onkeyup="init();"
+      onclick="init();"
+    ></textarea>
+    <script src="coolParticles.js"></script>
+    <script src="mouseover.js"></script>
+  </body>
+</html>
